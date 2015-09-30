@@ -6,13 +6,17 @@
     <link rel="stylesheet" type="text/css" href="../css/ttt.css">
   </head>
   <body>
+    <h1 class="title" align="center">Tic Tac Toe</h1>
+    <ul id="el"></ul>
     <script src="../js/jquery-2.1.1.js"></script>
     <!-- Whackjobs at GithubPages don't understand symlinks... -->
     <script src="../../ttt-core-solution/ttt-core.js"></script>
     <script src="../js/ttt-view.js"></script>
 
     <script>
-      // Write your code here.
+      var game = new TTT.Game();
+      var $el = $("#el");
+      var board = new TTT.View(game, $el);
     </script>
   </body>
 </html>

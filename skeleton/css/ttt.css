@@ -1,0 +1,31 @@
+.title {
+  position: relative;
+  margin: auto;
+  font-size: 54px;
+}
+
+.board {
+  height: 300px;
+  width: 300px;
+  border: #000 3px solid;
+  position: fixed;
+  padding: 0px;
+  margin: auto;
+  position:relative;
+  top: 50px;
+
+}
+
+.board li {
+  display: block;
+  border: #000 3px solid;
+  background-color: #ccc;
+  float: left;
+  width: 94px;
+  height: 94px;
+}
+
+.board li:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
