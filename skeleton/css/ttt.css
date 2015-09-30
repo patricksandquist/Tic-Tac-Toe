@@ -26,6 +26,22 @@
 }
 
 .board li:hover {
-  background-color: yellow;
+  background-color: #6600FF;
   cursor: pointer;
+}
+
+.board li.x {
+  background-color: #66FF66;
+  content: "X";
+  text-align: center;
+  color: #FF00CC;
+  font-size: 64px;
+}
+
+.board li.o {
+  background-color: #66FF66;
+  content: "O";
+  text-align: center;
+  font-size: 64px;
+  color: #FF00CC;
 }
