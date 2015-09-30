@@ -7,7 +7,7 @@
 .board {
   height: 300px;
   width: 300px;
-  border: #000 3px solid;
+  border: #FF9966 3px solid;
   position: fixed;
   padding: 0px;
   margin: auto;
@@ -18,8 +18,8 @@
 
 .board li {
   display: block;
-  border: #000 3px solid;
-  background-color: #ccc;
+  border: #6666FF 3px solid;
+  background-color: #CCFF00;
   float: left;
   width: 94px;
   height: 94px;
@@ -28,6 +28,11 @@
 .board li:hover {
   background-color: #6600FF;
   cursor: pointer;
+}
+
+.board li.over:hover {
+  background-color: #CCFF00;
+  cursor: default;
 }
 
 .board li.x {
@@ -44,4 +49,27 @@
   text-align: center;
   font-size: 64px;
   color: #FF00CC;
+}
+
+.board li.winner {
+  background-color: green;
+
+}
+
+.board li.loser {
+  background-color: #eee;
+  color: #000;
+}
+
+.board li.draw {
+  background-color: salmon;
+  color: blue;
+
+}
+
+center {
+  margin-top: 100px;
+  font-size: 64px;
+  font-weight: bold;
+  color: salmon;
 }
